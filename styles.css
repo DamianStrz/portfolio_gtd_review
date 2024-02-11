@@ -8,6 +8,16 @@
     --font-family: "Roboto", sans-serif;
     font-size: 10px;
 }
+
+/* 
+Media queries: 
+@media (min-width:320px) - smartphones, portrait iPhone, portrait 480x320 phones (Android)
+@media (min-width:480px) - smartphones, Android phones, landscape iPhone
+@media (min-width:600px) - portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android)
+@media (min-width:801px) - tablet, landscape iPad, lo-res laptops ands desktops
+@media (min-width:1025px) - big landscape tablets, laptops, and desktops
+@media (min-width:1281px) - hi-res laptops and desktops
+*/
    
 body {
     background-color: var(--background-color);
@@ -33,6 +43,7 @@ a {
 
 .header-text {
     font-size: 1.4rem;
+
 }
 
 #main {
@@ -73,7 +84,7 @@ article {
 
 .footer-left {
     width: 30%;
-    text-align: left;
+    text-align: left;   
 }
 
 .sources-list {
@@ -90,4 +101,125 @@ article {
 .footer-right {
     width: 30%;
     text-align: left;
+}
+
+@media only screen and (min-width: 480px) {
+    .header-title {
+        font-size: 2.4rem;
+    }
+
+    .header-text {
+        font-size: 1.8rem;
+
+    }
+
+    #main {
+       font-size: 1.4rem;
+    }
+
+    .hero-img {
+        width: 180px;
+        height: 256px;
+    }
+
+    .article-title {
+        font-size: 2rem;
+    }
+
+    #footer {
+        font-size: 1.2rem;        
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    
+    .hero-img {
+        width: 190px;
+        height: 270px;
+    }
+}
+
+@media only screen and (min-width: 801px) {
+    
+    .header-title {
+        font-size: 2.6rem;
+    }
+
+    .header-text {
+        font-size: 2rem;
+
+    }
+
+    #main {
+       font-size: 1.6rem;
+    }
+
+    .hero-img {
+        width: 200px;
+        height: 284px;
+    }
+
+    .article-title {
+        font-size: 2.2rem;
+    }
+
+    #footer {
+        font-size: 1.4rem;        
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    
+    .hero-img {
+        width: 240px;
+        height: 341px;
+    }
+
+    .footer-left {
+        width: 30%;
+        text-align: center; 
+    }
+
+    .sources-list {
+        text-align: center;
+    }
+    
+    .footer-mid {
+        width: 30%;
+        text-align: center;
+    }
+    .footer-right {
+        width: 30%;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-width: 1281px) {
+    
+    .header-title {
+        font-size: 3rem;
+    }
+
+    .header-text {
+        font-size: 2.4rem;
+
+    }
+
+    #main {
+       font-size: 2rem;
+    }
+
+    .hero-img {
+        width: 352px;
+        height: 500px;
+    }
+
+    .article-title {
+        font-size: 2.6rem;
+    }
+
+    #footer {
+        font-size: 1.8rem;        
+    }
 }
